@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color: #D6D6F2;
+    font-family: 'Outfit';
+
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--dark-blue, #000013);
+    background-image: url(./assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24.2rem;
+    padding: 20px;
+
+    font-size: 1.6rem;
+}
+
+.massage {
+    width: 380px;
+}
+
+.massage h1 {
+    font-size: 4.0rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+
+    margin-bottom: 24px;
+}
+
+
+.massage p {
+    font-size: 2.0rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+
+    margin-bottom: 56px;
+}
+
+.massage button {
+    background-color: #151557;
+    padding: 12px 24px;
+    color: #E2E2F5;
+
+    border: none;
+    border-radius: 999px;
+
+    font-size: 1.4rem;
+    line-height: 20px;
+    text-transform: uppercase;
+    
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.massage button:hover {
+    background-color: #1d1d71;
+}
+
+.animation {
+    display: flex;
+    align-items: center;
+}
+
+.animation img:nth-child(2) {
+    width: 23.0rem;
+}
+
+@media (max-width: 500px) {
+
+
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20.0rem;
+
+        font-size: 1.0rem;
+    }
+
+    .massage {
+        width: 100%;
+    }
+}
